@@ -3,12 +3,12 @@ automerge: false
 projects:
   - name: ec2
     dir: ./terraform
-    workflow: terraform
+    workflow: defualt
     autoplan:
       when_modified: ["*.tf", "*.tfvars"]
       enabled: true
 workflows:
-  terraform:
+  defualt:
     plan:
       steps:
         - init
