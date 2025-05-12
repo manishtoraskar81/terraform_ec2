@@ -1,0 +1,10 @@
+.terraform
+*/.terraform
+terraform.tfstate
+*.tfstate*
+*terraform-provider-*
+.terraform.lock.hcl
+.terraform-cache
+
+.history
+.DS_store
