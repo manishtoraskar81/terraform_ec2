@@ -2,7 +2,7 @@ version: 3
 automerge: false
 projects:
   - name: ec2
-    dir: ./terraform
+    dir: ./terraform/
     workflow: defualt
     autoplan:
       when_modified: ["*.tf", "*.tfvars"]
@@ -13,3 +13,4 @@ workflows:
       steps:
         - init
         - plan
+        
