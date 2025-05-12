@@ -19,7 +19,7 @@ module "ec2_instance" {
       throughput  = 200
       volume_size = 5
       tags = {
-        Env = "nonprod"
+        
       }
     }
   ]
