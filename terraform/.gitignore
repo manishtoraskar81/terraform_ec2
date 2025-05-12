@@ -1,0 +1,31 @@
+# === Terraform ===
+*.tfstate
+*.tfstate.*
+.crash
+.terraform/
+terraform.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# === Atlantis ===
+.atlantis.lock.json
+
+# === Local files and editors ===
+*.log
+*.bak
+*.swp
+.DS_Store
+.idea/
+.vscode/
+*.iml
+.env
+*.zip
+__pycache__/
+
+# === OS-specific ===
+Thumbs.db
+ehthumbs.db
+desktop.ini
