@@ -6,8 +6,11 @@ terraform {
     }
   }
 
-  backend "local" {
-    path = "terraform.tfstate"
+  backend "s3" {
+    bucket         = "state-mt"
+    key            = "prod/ec2/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = false
   }
 
 }
