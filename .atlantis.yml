@@ -1,0 +1,15 @@
+version: 3
+automerge: false
+projects:
+  - name: ec2
+    dir: .
+    workflow: default
+    autoplan:
+      when_modified: ["*.tf"]
+      enabled: true
+workflows:
+  default:
+    plan:
+      steps:
+        - init
+        - plan
