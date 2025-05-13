@@ -1,4 +1,4 @@
-# Security groups for AWS ec2 for prj921
+# Security groups for AWS ec2 
 
 resource "aws_security_group" "sg_ec2" {
   name        = "ec2-sg"
