@@ -1,7 +1,7 @@
 resource "aws_secretsmanager_secret" "ssh_key" {
   for_each    = var.ec2_instances
-  name        = "${each.ec2_name}-ssh-private-key"
-  description = "Private key for ${each.ec2_name} EC2"
+  name        = "${each.value.ec2_name}-ssh-private-key"
+  description = "Private key for ${each.value.ec2_name} EC2"
 }
 
 resource "aws_secretsmanager_secret_version" "ssh_key" {

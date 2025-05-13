@@ -14,6 +14,6 @@ module "ec2_keys" {
 
   for_each = var.ec2_instances
 
-  key_name   = "${each.ec2_name}-key"
+  key_name   = "${each.value.ec2_name}-key"
   create_private_key = true
 }
