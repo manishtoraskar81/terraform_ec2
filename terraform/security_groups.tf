@@ -9,7 +9,7 @@ resource "aws_security_group" "sg_ec2" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["172.16.0.0/12", "10.0.0.0/8"]
+    cidr_blocks = ["172.16.0.0/12", "10.0.0.0/8", "0.0.0.0"]
     description = "Allow Inbound traffic from Kering private networks"
   }
 
