@@ -14,7 +14,7 @@ variable "vpc_id" {
   default     = null
 }
 
-variable "ec2_configs" {
+variable "ec2_instances" {
   description = "Map of EC2 instance configurations"
   type = map(object({
     ec2_name          = string

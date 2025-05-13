@@ -8,7 +8,7 @@ additional_tags = {
     TeamName       = "my_team"
 }
 
-ec2_configs = {
+ec2_instances = {
   "kgawsnytest1" = {
     ec2_name          = "kgawsnytest1"
     ami               = "ami-001b528478909f262"
