@@ -1,3 +1,13 @@
+vpc_id = "vpc-0f8e267e4cb618066"
+
+additional_tags = {
+    Env            = "nonprod"
+    Owner          = "self"
+    Project        = "921"
+    Support        = "self"
+    TeamName       = "my team"
+}
+
 ec2_configs = {
   "kgawsnytest1" = {
     ec2_name          = "kgawsnytest1"
