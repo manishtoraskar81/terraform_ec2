@@ -29,7 +29,7 @@ data "aws_iam_policy_document" "kms_allow_ec2_ebs" {
 
 module "kms_ebs" {
   source  = "terraform-aws-modules/kms/aws"
-#  version = "3.1.1"
+  version = "3.1.1"
 
   aliases                 = ["ec2-ebs/fs"]
   description             = "KMS Key to encrypt the EBS file system"
