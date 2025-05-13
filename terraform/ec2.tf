@@ -8,7 +8,7 @@ module "ec2_instance" {
   ami               = each.value.ami
   instance_type     = each.value.instance_type
   subnet_id         = each.value.subnet_id
-  vpc_security_group_ids = each.value.security_group_ids
+  vpc_security_group_ids = [aws_security_group.sg_ec2.id]
   tags              = each.value.tags
 
   root_block_device = [
