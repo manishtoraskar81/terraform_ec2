@@ -1,4 +1,6 @@
 variable "account_id" {
+  description = "Account ID where the resources are deployed"
+  type        = string
   defualt = "969837447401"
 }
 
