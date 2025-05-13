@@ -5,7 +5,7 @@ additional_tags = {
     Owner          = "self"
     Project        = "921"
     Support        = "self"
-    TeamName       = "my team"
+    TeamName       = "my_team"
 }
 
 ec2_configs = {
