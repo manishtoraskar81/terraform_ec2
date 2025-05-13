@@ -14,7 +14,7 @@ module "ec2_instance" {
   root_block_device = [
     {
       encrypted   = true
-      kms_key_id  = each.value.kms_key_id
+      kms_key_id  = module.kms_ebs.key_arn
       volume_type = "gp3"
       throughput  = 200
       volume_size = 8
