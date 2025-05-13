@@ -9,7 +9,7 @@ module "ec2_instance" {
   subnet_id         = each.value.subnet_id
   vpc_security_group_ids = [aws_security_group.sg_ec2.id]
   tags              = each.value.tags
-  key_name          = module.ec2_keys[each.key].key_name
+  key_name          = module.ec2_keys[each.key].key_arn
 
   root_block_device = [
     {
