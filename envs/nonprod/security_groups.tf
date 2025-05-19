@@ -21,5 +21,5 @@ resource "aws_security_group" "sg_ec2" {
     description = "Allow outbound traffic to any destination"
   }
 
-  tags = merge(local.default_tags, var.additional_tags, {Name = "ec2-instance"})
+  tags = merge(local.default_tags, var.additional_tags, { Name = "ec2-instance" })
 }
