@@ -15,10 +15,6 @@ ec2_instances = {
     instance_type     = "t2.micro"
     subnet_id         = "subnet-07cc3be1258ee8660"
     security_group_ids = ["sg-0a6a5a3cca67bd97e"]
-    tags              = {
-      Name = "kgawsnytest1"
-      Env  = "nonprod"
-    }
     kms_key_id        = "fc12a241-8c2a-47a5-9e7c-f7558e9d5f7a"
   },
   "kgawsnytest2" = {
@@ -27,10 +23,6 @@ ec2_instances = {
     instance_type     = "t2.micro"
     subnet_id         = "subnet-07cc3be1258ee8660"
     security_group_ids = ["sg-0a6a5a3cca67bd97e"]
-    tags              = {
-      Name = "kgawsnytest2"
-      Env  = "nonprod"
-    }
     kms_key_id        = "fc12a241-8c2a-47a5-9e7c-f7558e9d5f7a"
   }
 }
