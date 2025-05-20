@@ -75,7 +75,7 @@ module "kms_secretsmanager" {
   source  = "terraform-aws-modules/kms/aws"
   version = "3.1.1"
 
-  aliases                 = ["fsx-ontap/secretsmanager"]
+  aliases                 = ["bal/secretsmanager"]
   description             = "KMS Key to encrypt the file system of FSX OnTap at rest"
   key_administrators      = ["arn:aws:iam::${var.account_id}:root"]
   key_usage               = "ENCRYPT_DECRYPT"

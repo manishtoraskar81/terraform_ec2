@@ -24,8 +24,9 @@ terraform {
 
 
 provider "aws" {
-  #alias = "prod"
-  region = var.aws_region
+  alias   = "prod"
+  region  = var.aws_region
+  profile = "prod"
 
   #assume_role {
   #  role_arn = format("arn:aws:iam::%s:role/infra-iac-account-worker", var.account_id)

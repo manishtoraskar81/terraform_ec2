@@ -18,14 +18,16 @@ terraform {
     #  role_arn = "arn:aws:iam::385764924434:role/infra-iac"
     #}
     #workspace_key_prefix = "oi-projects-bal"
+    profile = "prod"
   }
 
 }
 
 
 provider "aws" {
-  #alias = "account_nonprod"
-  region = var.aws_region
+  alias   = "nonprod"
+  region  = var.aws_region
+  profile = "nonprod"
 
   #assume_role {
   #  role_arn = format("arn:aws:iam::%s:role/infra-iac-account-worker", var.account_id)
