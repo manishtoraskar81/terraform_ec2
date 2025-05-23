@@ -1,3 +1,3 @@
-output "ids" {
-    value = [for v in aws_ebs_volume.this : v.id]
+output "id" {
+    value = aws_ebs_volume.this.id
 }

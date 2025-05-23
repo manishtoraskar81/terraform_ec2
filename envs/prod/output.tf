@@ -3,8 +3,12 @@ output "ids" {
     value = [for v in module.ec2_instance : v.id]
 }
 
-output "az" {
-  value = { for id, instance in module.ec2_instance : id => instance.availability_zone }
+#output "az" {
+#  value = { for id, instance in module.ec2_instance : id => instance.availability_zone }
+#}
+
+output "ebs_volume_ids" {
+    value = [for v in module.ebs_volumes : v.id]
 }
 
 #output "ebs_volume_ids" {

@@ -31,7 +31,7 @@ module "kms_ebs" {
   source  = "terraform-aws-modules/kms/aws"
   version = "3.1.1"
 
-  aliases                 = ["ec2-ebs/fs"]
+  aliases                 = ["ec2-ebs/fs1"]
   description             = "KMS Key to encrypt the EBS file system"
   key_administrators      = ["arn:aws:iam::${var.account_id}:root"]
   key_usage               = "ENCRYPT_DECRYPT"
@@ -75,7 +75,7 @@ module "kms_secretsmanager" {
   source  = "terraform-aws-modules/kms/aws"
   version = "3.1.1"
 
-  aliases                 = ["bal/secretsmanager"]
+  aliases                 = ["bal/secretsmanager1"]
   description             = "KMS Key to encrypt the file system of FSX OnTap at rest"
   key_administrators      = ["arn:aws:iam::${var.account_id}:root"]
   key_usage               = "ENCRYPT_DECRYPT"
